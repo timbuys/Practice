@@ -16,10 +16,9 @@
   <body>
     <script type="text/javascript">
 	    
-    	$.get("index.txt", function(data){
-	
-		alert(data);
-	}):
+    $.ajax("index.txt").done(function(data) {
+    	alert(data);
+    });
 
     </script>
 </body>
