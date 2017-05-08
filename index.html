@@ -14,12 +14,17 @@
     
   
   <body>
+	  <p> </p>
     <script type="text/javascript">
 	    
-    $.ajax("indexx.txt").done(function(data) {
-    	alert(data);
+    $.ajax("index.txt").done(function(data) {
+	    
+    	$("p").html(data);
+	    
     }).fail(function() {
+	    
     	alert("Could not get data");
+    
     });
 
     </script>
