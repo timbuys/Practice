@@ -18,6 +18,8 @@
 	    
     $.ajax("index.txt").done(function(data) {
     	alert(data);
+    }).fail(function() {
+    	aoert("Could not get data");
     });
 
     </script>
